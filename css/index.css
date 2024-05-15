@@ -1,0 +1,313 @@
+.carousel-inner {
+    height: 80vh;
+}
+
+.searchbox {
+    padding: 5%;
+    background-color: rgba(4, 255, 0, 0.112);
+}
+
+/* For View */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* For cartoon */
+.penguin {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    z-index: 0;
+    position: relative;
+    transition: transform 1s ease-in-out 0ms;
+  }
+  
+  .penguin * {
+    position: absolute;
+  }
+  
+  .penguin:active {
+    transform: scale(0.5);
+    transition: 0s ease;
+    cursor: not-allowed;
+  }
+  
+  .penguin-head {
+    width: 50%;
+    height: 45%;
+    background: linear-gradient(45deg,
+        gray,
+        rgb(239, 240, 228));
+    border-radius: 70% 70% 65% 65%;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+  }
+  
+  .face {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+  }
+  
+  .face.left {
+    left: 5%;
+  }
+  
+  .face.right {
+    right: 5%;
+  }
+  
+  .chin {
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    top: 25%;
+    left: 5%;
+    border-radius: 70% 70% 100% 100%;
+  }
+  
+  .eye {
+    width: 15%;
+    height: 17%;
+    background-color: black;
+    top: 45%;
+    border-radius: 50%;
+  }
+  
+  .eye.left {
+    left: 25%;
+  }
+  
+  .eye.right {
+    right: 25%;
+  }
+  
+  .eye-lid {
+    width: 150%;
+    height: 100%;
+    background-color: white;
+    top: 25%;
+    left: -23%;
+    border-radius: 50%;
+  }
+  
+  .blush {
+    width: 15%;
+    height: 10%;
+    background-color: pink;
+    top: 65%;
+    border-radius: 50%;
+  }
+  
+  .blush.left {
+    left: 15%;
+  }
+  
+  .blush.right {
+    right: 15%;
+  }
+  
+  .beak {
+    height: 10%;
+    background-color:rgb(237, 102, 102);
+    border-radius: 50%;
+  }
+  
+  .beak.top {
+    width: 20%;
+    top: 60%;
+    left: 40%;
+  }
+  
+  .beak.bottom {
+    width: 16%;
+    top: 65%;
+    left: 42%;
+  }
+  
+  .shirt {
+    font: bold 25px Helvetica, sans-serif;
+    top: 165px;
+    left: 127.5px;
+    z-index: 1;
+    color: #6a6969;
+  }
+  
+  .shirt div {
+    top: 34px;
+    left: 6px;
+  }
+  
+  .penguin-body {
+    width: 53%;
+    height: 45%;
+    background: linear-gradient(45deg,
+        rgb(134, 133, 133) 0%,
+        rgb(234, 231, 231) 25%,
+        white 67%);
+    border-radius: 80% 80% 100% 100%;
+    top: 40%;
+    left: 23.5%;
+  }
+  
+  .penguin-body::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    background-color:gray;
+    top: 10%;
+    left: 25%;
+    border-radius: 0% 0% 100% 100%;
+    opacity: 70%;
+  }
+  
+  .arm {
+    width: 30%;
+    height: 60%;
+    background: linear-gradient(90deg,
+    gray,
+        rgb(209, 210, 199));
+    border-radius: 30% 30% 30% 120%;
+    z-index: -1;
+  }
+  
+  .arm.left {
+    top: 35%;
+    left: 5%;
+    transform-origin: top left;
+    transform: rotate(130deg) scaleX(-1);
+    animation: 3s linear infinite wave;
+  }
+  
+  .arm.right {
+    top: 0%;
+    right: -5%;
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes wave {
+    10% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+  
+    20% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+  
+    30% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+  
+    40% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+  }
+  
+  .foot {
+    width: 15%;
+    height: 30%;
+    background-color:orange;
+    top: 85%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .foot.left {
+    left: 25%;
+    transform: rotate(80deg);
+  }
+  
+  .foot.right {
+    right: 25%;
+    transform: rotate(-80deg);
+  }
+  
+  h2{
+    text-align: center;
+  }
+
+
+
+/* for customer */
+.box {
+    width: 100%;
+    padding: 5%;
+    /* background: rgba(0,0,0,0.8); */
+    background-color: pink;
+}
+
+.custForm {
+    margin: 50px;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #fff;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
